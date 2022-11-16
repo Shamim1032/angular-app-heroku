@@ -1,0 +1,53 @@
+
+<h1>Get method</h1>
+<table>
+    <th>UserId</th>
+    <th>Id</th>
+    <th>title</th>
+    <th>Body</th>
+
+    <tr *ngFor="let com of lstcomments ">
+      <td>{{com.userId}}</td>
+      <td>{{com.id}}</td>
+      <td>{{com.title}}</td>
+      <td>{{com.body}}</td>
+    </tr>
+  
+
+</table>
+<h1>Get Method using Parameters</h1>
+<table>
+  <tr>
+  <th>UserId</th>
+  <th>Id</th>
+  <th>title</th>
+  <th>Body</th>
+  </tr>
+  <tr *ngFor="let com of lstcomments ">
+    <td>{{com.userId}}</td>
+    <td>{{com.id}}</td>
+    <td>{{com.title}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+<h1>Post Method</h1>
+<p>id: {{objPost?.id}}</p>
+<p>userId: {{objPost?.userId}}</p>
+<p>title: {{objPost?.title}}</p>
+<p>body: {{objPost?.body}}</p>
+
+<h1>Put Method</h1>
+<p>id: {{objPut?.id}}</p>
+<p>userId: {{objPut?.userId}}</p>
+<p>title: {{objPut?.title}}</p>
+<p>body: {{objPut?.body}}</p>
+ 
+<h1>Patch Method</h1>
+<p>id: {{objPatch?.id}}</p>
+
+<p>title: {{objPatch?.title}}</p>
+<p>body: {{objPatch?.body}}</p>
+
+<h1>Delete Method</h1>
+<p>Message: {{message}}</p>
+
